@@ -2,5 +2,7 @@
 
 include /usr/share/linux-packaging-snippets/kernel-snippet.mk
 BUILD_COMMAND := $(BUILD_COMMAND) DTC_EXT=/usr/bin/dtc
+override_dh_dwz:
+override_dh_strip:
 %:
 	dh $@
