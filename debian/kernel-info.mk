@@ -200,7 +200,7 @@ BUILD_SKIP_MODULES = 0
 
 # Extra paths to prepend to the PATH variable. You'll probably want
 # to specify the clang path here (the default).
-BUILD_PATH = /usr/lib/llvm-android-10.0-r370808/bin
+BUILD_PATH = /usr/lib/llvm-android-6.0-4691093/bin
 
 # Extra packages to add to the Build-Depends section. Mainline builds
 # can have this section empty, unless cross-building.
@@ -217,4 +217,4 @@ DEB_BUILD_FOR = arm64
 KERNEL_ARCH = arm64
 
 # Kernel target to build
-KERNEL_BUILD_TARGET = Image.gz
+KERNEL_BUILD_TARGET = Image.gz-dtb
