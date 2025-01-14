@@ -56,6 +56,7 @@ esac
 
 # Execute
 if make -j$(nproc --all) O=out Image.gz-dtb
+then
     echo -e "${GREEN}Build successful${NC}"
     tput bel
 else
