@@ -41,12 +41,12 @@ tput bel
 case $yn in
     [yY] )
 	echo "Starting nconfig...";
-        make -j$(nproc --all) O=out LLVM_IAS=1 certus_defconfig nconfig
+        make -j$(nproc --all) O=out LLVM_IAS=1 cactus_defconfig nconfig
     ;;
 
     [nN] )
     	echo "Proceeding without menuconfig..."
-        make -j$(nproc --all) O=out certus_defconfig
+        make -j$(nproc --all) O=out cactus_defconfig
     ;;
 
     * )
@@ -55,7 +55,7 @@ case $yn in
 esac
 
 # Execute
-if make -j$(nproc --all) O=out Image.gz-dtb
+if make -j$(nproc --all) O=out zImage-dtb
 then
     echo -e "${GREEN}Build successful${NC}"
     tput bel
