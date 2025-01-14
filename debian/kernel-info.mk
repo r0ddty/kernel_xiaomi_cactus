@@ -105,7 +105,7 @@ KERNEL_BOOTIMAGE_DTB_OFFSET = 0x0000000047880000
 # Devices launched with Android 11: version 2 or 3 (GKI)
 # Devices launched with Android 12: version 3 (GKI) or 4 (GKI)
 # Devices launched with Android 13: version 3 (GKI) or 4 (GKI)
-KERNEL_BOOTIMAGE_VERSION = 2
+KERNEL_BOOTIMAGE_VERSION = 1
 
 # Kernel initramfs compression. Defaults to gzip.
 # All non-gki devices need a gzip (gz) initramfs
