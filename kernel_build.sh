@@ -38,12 +38,12 @@ tput bel
 case $yn in
     [yY] )
 	echo "Starting nconfig...";
-        make -j$(nproc --all) O=out ARCH=arm CC=$(pwd)/clang/bin/clang CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=aarch64-linux-gnu- LLVM_IAS=1 certus_defconfig nconfig
+        make -j$(nproc --all) O=out ARCH=arm CC=$(pwd)/clang/bin/clang CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=arm-linux-gnueabi- LLVM_IAS=1 cactus_defconfig nconfig
     ;;
 
     [nN] )
     	echo "Proceeding without menuconfig..."
-        make -j$(nproc --all) O=out ARCH=arm CC=$(pwd)/clang/bin/clang CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=aarch64-linux-gnu- LLVM_IAS=1 certus_defconfig
+        make -j$(nproc --all) O=out ARCH=arm CC=$(pwd)/clang/bin/clang CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=arm-linux-gnueabi- LLVM_IAS=1 cactus_defconfig
     ;;
 
     * )
@@ -52,7 +52,7 @@ case $yn in
 esac
 
 # Execute
-if make -j$(nproc --all) O=out ARCH=arm CC=$(pwd)/clang/bin/clang CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=aarch64-linux-gnu- LLVM_IAS=1
+if make -j$(nproc --all) O=out ARCH=arm CC=$(pwd)/clang/bin/clang CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE=aarch64-linux-gnu- CLANG_TRIPLE=arm-linux-gnueabi- LLVM_IAS=1
 then
     echo -e "${GREEN}Build successful${NC}"
     tput bel
