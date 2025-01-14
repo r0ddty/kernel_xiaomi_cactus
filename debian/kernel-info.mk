@@ -28,7 +28,7 @@ DEVICE_FULL_NAME = Xiaomi Redmi 6A
 
 # Whether to use configuration fragments to augment the kernel configuration.
 # If unsure, keep this to 0.
-KERNEL_CONFIG_USE_FRAGMENTS = 1
+KERNEL_CONFIG_USE_FRAGMENTS = 0
 
 # Whether to use diffconfig to generate the device-specific configuration.
 # If you enable this, you should set KERNEL_CONFIG_USE_FRAGMENTS to 1.
