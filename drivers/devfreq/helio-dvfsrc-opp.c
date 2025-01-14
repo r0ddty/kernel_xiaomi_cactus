@@ -16,7 +16,7 @@
 #ifdef CONFIG_MTK_QOS_FRAMEWORK
 #include <mtk_qos_ipi.h>
 #else
-#include <helio-dvfsrc-ipi.h>
+#include "helio-dvfsrc-ipi.h"
 #endif
 
 static struct opp_profile opp_table[VCORE_DVFS_OPP_NUM];
