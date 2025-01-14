@@ -67,7 +67,7 @@ fi
 
 # Package
 git clone --depth=1 https://github.com/r0ddty/AnyKernel3-680 -b cactus AnyKernel3
-cp -R out/arch/arm/boot/Image.gz-dtb AnyKernel3/Image.gz-dtb
+cp -R out/arch/arm/boot/zImage-dtb AnyKernel3/zImage-dtb
 # Zip it and upload it
 cd AnyKernel3
 zip -r9 "$KERNNAME"-"$KERNVER"-"$BUILDDATE" . -x ".git*" -x "README.md" -x "*.zip"
@@ -75,7 +75,7 @@ zip -r9 "$KERNNAME"-"$KERNVER"-"$BUILDDATE" . -x ".git*" -x "README.md" -x "*.zi
 # Move kernel zip to the output folder
 mkdir ../output
 mv "$KERNNAME"-"$KERNVER"-"$BUILDDATE".zip ../output/
-mv Image.gz-dtb ../output/
+mv zImage-dtb ../output/
 cd ..
 
 echo "Cleaning up..."
