@@ -12,7 +12,7 @@
  */
 
 #include "helio-dvfsrc.h"
-#include <helio-dvfsrc-opp.h>
+#include "helio-dvfsrc-opp.h"
 #ifdef CONFIG_MTK_QOS_FRAMEWORK
 #include <mtk_qos_ipi.h>
 #else
