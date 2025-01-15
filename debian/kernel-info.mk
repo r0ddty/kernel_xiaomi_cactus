@@ -190,7 +190,7 @@ BUILD_TRIPLET = aarch64-linux-android-
 BUILD_CLANG_TRIPLET = aarch64-linux-gnu-
 
 # The compiler to use. Recent Android kernels are built with clang.
-BUILD_CC = gcc-4.7-arm-linux-gnueabihf
+BUILD_CC = arm-linux-gnueabihf-gcc-4.7.3
 
 # Use llvm instead of gcc. Recent Android kernels (past android 12) need llvm.
 BUILD_LLVM = 0
@@ -200,12 +200,12 @@ BUILD_SKIP_MODULES = 0
 
 # Extra paths to prepend to the PATH variable. You'll probably want
 # to specify the clang path here (the default).
-BUILD_PATH = /buildd/sources/gcc-arm-linux-gnueabihf-4-7/bin/arm-linux-gnueabihf-
+BUILD_PATH = /buildd/sources/gcc-arm-linux-gnueabihf-4-7/bin/
 
 # Extra packages to add to the Build-Depends section. Mainline builds
 # can have this section empty, unless cross-building.
 # The default is enough to install the Android toolchain, including clang.
-DEB_TOOLCHAIN = clang-android-10.0-r370808, linux-initramfs-halium-generic:armhf, linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-android-6.0-4691093, gcc-4.9-aarch64-linux-android, g++-4.9-aarch64-linux-android, libgcc-4.9-dev-aarch64-linux-android-cross
+DEB_TOOLCHAIN = linux-initramfs-halium-generic:armhf, linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu
 
 # Where we're building on
 DEB_BUILD_ON = amd64
