@@ -205,7 +205,7 @@ BUILD_PATH = /buildd/sources/gcc-arm-linux-gnueabihf-4-7/bin/
 # Extra packages to add to the Build-Depends section. Mainline builds
 # can have this section empty, unless cross-building.
 # The default is enough to install the Android toolchain, including clang.
-DEB_TOOLCHAIN = linux-initramfs-halium-generic:armhf, linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu
+DEB_TOOLCHAIN = linux-initramfs-halium-generic:armhf, linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu, clang-android-6.0-4691093
 
 # Where we're building on
 DEB_BUILD_ON = amd64
