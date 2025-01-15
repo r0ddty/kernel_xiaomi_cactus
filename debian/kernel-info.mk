@@ -190,7 +190,7 @@ BUILD_TRIPLET = aarch64-linux-android-
 BUILD_CLANG_TRIPLET = aarch64-linux-gnu-
 
 # The compiler to use. Recent Android kernels are built with clang.
-BUILD_CC = aarch64-linux-android-gcc-4.9
+BUILD_CC = gcc-4.7-arm-linux-gnueabihf
 
 # Use llvm instead of gcc. Recent Android kernels (past android 12) need llvm.
 BUILD_LLVM = 0
@@ -200,7 +200,7 @@ BUILD_SKIP_MODULES = 0
 
 # Extra paths to prepend to the PATH variable. You'll probably want
 # to specify the clang path here (the default).
-BUILD_PATH = /usr/lib/llvm-android-6.0-4691093/bin
+BUILD_PATH = /buildd/sources/gcc-arm-linux-gnueabihf-4-7/bin/arm-linux-gnueabihf-
 
 # Extra packages to add to the Build-Depends section. Mainline builds
 # can have this section empty, unless cross-building.
