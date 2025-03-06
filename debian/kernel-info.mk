@@ -11,7 +11,7 @@ VARIANT = android
 KERNEL_BASE_VERSION = 4.9-200
 
 # The kernel cmdline to use
-KERNEL_BOOTIMAGE_CMDLINE = bootopt=64S3,32N2,64N2 androidboot.selinux=permissive buildvariant=userdebug datapart=/dev/mmcblk1p1
+KERNEL_BOOTIMAGE_CMDLINE = bootopt=64S3,32N2,64N2 androidboot.selinux=permissive buildvariant=userdebug
 
 # Slug for the device vendor. This is going to be used in the KERNELRELASE
 # and package names.
